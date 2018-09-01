@@ -1,5 +1,7 @@
 # PhelipeRocha.com
 
+[![Build Status](https://travis-ci.com/pheliperocha/pheliperocha.com.svg?branch=master)](https://travis-ci.com/pheliperocha/pheliperocha.com)
+
 > My personal website! Here you can discover more about me and my projects. And also learn about development stuffs!
 
 ## Project setup
