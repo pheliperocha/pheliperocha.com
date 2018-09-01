@@ -56,3 +56,5 @@
     border-spacing: 0;
   }
 </style>
+<style lang="scss" src="@/styles/variables.scss"></style>
+<style lang="scss" src="@/styles/typography.scss"></style>
