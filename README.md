@@ -1,4 +1,6 @@
-# ph
+# PhelipeRocha.com
+
+> My personal website! Here you can discover more about me and my projects. And also learn about development stuffs!
 
 ## Project setup
 ```
