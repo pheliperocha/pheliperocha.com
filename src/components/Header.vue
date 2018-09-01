@@ -31,7 +31,7 @@
             <h1>Phelipe Rocha</h1>
             <p><i class="fa fa-map-marker" aria-hidden="true"></i> Rio de Janeiro - RJ</p>
             <!--                            <p><i class="fa fa-circle infinite" aria-hidden="true"></i> Online</p>-->
-            <p class="hint--bottom" data-hint="Albert Einstein"><i class="fa fa-quote-left" aria-hidden="true"></i> A mente que se abre a uma nova ideia jamais volta ao seu tamanho original.</p>
+            <p class="hint--bottom" data-hint="Albert Einstein"><i class="fa fa-quote-left" aria-hidden="true"></i> {{ $t("sentences.inspiration") }} - {{ $t("sentences.author") }}</p>
           </div>
         </div>
       </div>
@@ -43,11 +43,11 @@
           <div class="row">
             <nav class="col-xs-12 menu-options">
               <ul>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#about">{{ $t("menu.about") }}</a></li>
+                <li><a href="#services">{{ $t("menu.services") }}</a></li>
+                <li><a href="#portfolio">{{ $t("menu.projects") }}</a></li>
+                <li><a href="#blog">{{ $t("menu.blog") }}</a></li>
+                <li><a href="#contact">{{ $t("menu.contact") }}</a></li>
               </ul>
             </nav>
           </div>
@@ -198,6 +198,7 @@ export default class Header extends Vue {}
           width: 20%;
           margin-bottom: 0;
           padding: 10px;
+          text-transform: capitalize;
         }
       }
 
