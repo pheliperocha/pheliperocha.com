@@ -29,8 +29,8 @@
 
           <div class="menu-profile-info">
             <h1>Phelipe Rocha</h1>
-            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Rio de Janeiro - RJ</p>
-            <!--                            <p><i class="fa fa-circle infinite" aria-hidden="true"></i> Online</p>-->
+            <p><FontAwesomeIcon icon="map-marker-alt" /> Rio de Janeiro - RJ</p>
+
             <p class="hint--bottom" data-hint="Albert Einstein"><i class="fa fa-quote-left" aria-hidden="true"></i> {{ $t("sentences.inspiration") }} - {{ $t("sentences.author") }}</p>
           </div>
         </div>
@@ -43,11 +43,11 @@
           <div class="row">
             <nav class="col-xs-12 menu-options">
               <ul>
-                <li><a href="#about">{{ $t("menu.about") }}</a></li>
-                <li><a href="#services">{{ $t("menu.services") }}</a></li>
-                <li><a href="#portfolio">{{ $t("menu.projects") }}</a></li>
-                <li><a href="#blog">{{ $t("menu.blog") }}</a></li>
-                <li><a href="#contact">{{ $t("menu.contact") }}</a></li>
+                <li><a href="#">{{ $t("menu.about") }}</a></li>
+                <li><a href="#">{{ $t("menu.services") }}</a></li>
+                <li><a href="#">{{ $t("menu.projects") }}</a></li>
+                <li><a href="#">{{ $t("menu.blog") }}</a></li>
+                <li><a href="#">{{ $t("menu.contact") }}</a></li>
               </ul>
             </nav>
           </div>
@@ -82,16 +82,13 @@ export default class Header extends Vue {}
       top: 0;
       left: 0;
       z-index: 0;
+      opacity: .3;
     }
 
     video {
       position: absolute;
       width: 100%;
       box-sizing: border-box;
-      -webkit-filter: blur(10px);
-      -moz-filter: blur(10px);
-      -o-filter: blur(10px);
-      -ms-filter: blur(10px);
       filter: blur(15px);
       z-index: 0;
       display: none;
@@ -102,7 +99,6 @@ export default class Header extends Vue {}
 
     }
 
-    /* BEGIN Select Lang */
     .menu-change-lang {
       position: relative;
       z-index: 9;
@@ -116,7 +112,6 @@ export default class Header extends Vue {}
         color: $black;
       }
     }
-    /* END Select Lang */
 
     .logo {
       width: 160px;
@@ -127,19 +122,9 @@ export default class Header extends Vue {}
       top: 0; left: 0; bottom: 0; right: 0;
       z-index: 3;
       border: 5px solid $white;
-
-      -webkit-box-shadow:
-              0 0 0 10px  rgba(255,255,255,.2),
-              0 0 5px 2px rgba(0,0,0,.3);
-      -moz-box-shadow:
-              0 0 0 10px  rgba(255,255,255,.2),
-              0 0 5px 2px rgba(0,0,0,.3);
       box-shadow:
               0 0 0 10px  rgba(255,255,255,.2),
               0 0 5px 2px rgba(0,0,0,.3);
-
-      -webkit-border-radius: 999px;
-      -moz-border-radius: 999px;
       border-radius: 999px;
     }
 
@@ -160,17 +145,16 @@ export default class Header extends Vue {}
         }
 
       }
+
       p {
         margin-bottom: 0;
         font-size: .8rem;
         font-weight: lighter;
       }
-      .fa-map-marker {
+
+      .fa-map-marker-alt {
         color: #f00;
-        font-size: 20px;
-      }
-      .fa-circle {
-        color: #00ff00;
+        font-size: 18px;
       }
     }
 
@@ -203,10 +187,8 @@ export default class Header extends Vue {}
       }
 
       li {
-        -webkit-transform: translateZ(0);
         transform: translateZ(0);
         box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         -moz-osx-font-smoothing: grayscale;
         position: relative;
@@ -230,19 +212,13 @@ export default class Header extends Vue {}
           bottom: 0;
           background: $white;
           height: 5px;
-          -webkit-transform: translateY(10px);
           transform: translateY(10px);
-          -webkit-transition-property: transform;
-          -webkit-transition-property: -webkit-transform;
           transition-property: -webkit-transform;
           transition-property: transform, -webkit-transform;
-          -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
-          -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
 
           @media (max-width : 600px) {
-            -webkit-transform: translateY(10px);
             transform: translateY(10px);
           }
         }
