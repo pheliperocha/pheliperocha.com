@@ -1,35 +1,24 @@
-# PhelipeRocha.com
+<h1 align="center">
+  PhelipeRocha.com
+</h1>
 
-[![Build Status](https://travis-ci.com/pheliperocha/pheliperocha.com.svg?branch=master)](https://travis-ci.com/pheliperocha/pheliperocha.com)
+<h4 align="center">
+  My personal website!
+  <br>
+  Here you can discover more about me and my projects.
+  <br>
+  And also learn about development stuffs
+</h4>
 
-> My personal website! Here you can discover more about me and my projects. And also learn about development stuffs!
+<p align="center">
+  <a href="https://travis-ci.com/pheliperocha/pheliperocha.com"><img src="https://travis-ci.com/pheliperocha/pheliperocha.com.svg?branch=master"></a>
+</p>
 
-## Project setup
-```
-npm install
-```
+## Built with 🛠
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
+- [Vue.js](https://vuejs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Sass](https://sass-lang.com/)
+- [Chai](http://www.chaijs.com/)
+- [Mocha](https://mochajs.org/)
+- [Font Awesome](https://fortawesome.com/)
