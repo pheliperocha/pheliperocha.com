@@ -17,6 +17,8 @@
 
 ## Built with 🛠
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/91ffe11803e74825875b4bde0ad31bdc)](https://app.codacy.com/app/pheliperocha/pheliperocha.com?utm_source=github.com&utm_medium=referral&utm_content=pheliperocha/pheliperocha.com&utm_campaign=Badge_Grade_Dashboard)
+
 - [Vue.js](https://vuejs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
