@@ -53,14 +53,14 @@ export default class Title extends Vue {
     }
 
     .divider {
-        width: 60%;
+        width: 90%;
         height: 1px;
         background: $black;
         margin: 0 auto 32px;
         text-align: center;
 
         &.sub {
-            width: 30%;
+            width: 60%;
         }
 
         span {
@@ -69,6 +69,16 @@ export default class Title extends Vue {
             background: $white;
             color: $black;
             padding: 0 8px;
+        }
+    }
+
+    @media (min-width: $screen-sm-min) {
+        .divider {
+            width: 60%;
+
+            &.sub {
+                width: 30%;
+            }
         }
     }
 
