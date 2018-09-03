@@ -1,5 +1,5 @@
 <template>
-    <Section :theme="theme">
+    <Section :theme="theme" id="blogSection">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -15,7 +15,7 @@
 <script lang="ts">
   import { Component, Prop, Vue } from 'vue-property-decorator';
   import Title from '@/components/Title.vue';
-  import Section from '../../components/Section';
+  import Section from '@/components/Section.vue';
 
   @Component({
     components: {

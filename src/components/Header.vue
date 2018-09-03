@@ -43,11 +43,11 @@
           <div class="row">
             <nav class="col-xs-12 menu-options">
               <ul>
-                <li><a href="#">{{ $t("menu.about") }}</a></li>
-                <li><a href="#">{{ $t("menu.services") }}</a></li>
-                <li><a href="#">{{ $t("menu.projects") }}</a></li>
-                <li><a href="#">{{ $t("menu.blog") }}</a></li>
-                <li><a href="#">{{ $t("menu.contact") }}</a></li>
+                <li><a href="#aboutSection">{{ $t("menu.about") }}</a></li>
+                <li><a href="#servicesSection">{{ $t("menu.services") }}</a></li>
+                <li><a href="#projectsSection">{{ $t("menu.projects") }}</a></li>
+                <li><a href="#blogSection">{{ $t("menu.blog") }}</a></li>
+                <li><a href="#contactSection">{{ $t("menu.contact") }}</a></li>
               </ul>
             </nav>
           </div>

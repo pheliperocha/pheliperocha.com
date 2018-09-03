@@ -14,12 +14,12 @@
 import { Component, Vue } from 'vue-property-decorator';
 import Header from '@/components/Header.vue';
 import Section from '@/components/Section.vue';
-import AboutSection from './homeSections/AboutSection';
-import ServicesSection from './homeSections/ServicesSection';
-import ProjectsSection from './homeSections/ProjectsSection';
-import BlogSection from './homeSections/BlogSection';
-import ContactSection from './homeSections/ContactSection';
-import NewsletterSection from './homeSections/NewsletterSection';
+import AboutSection from './homeSections/AboutSection.vue';
+import ServicesSection from './homeSections/ServicesSection.vue';
+import ProjectsSection from './homeSections/ProjectsSection.vue';
+import BlogSection from './homeSections/BlogSection.vue';
+import ContactSection from './homeSections/ContactSection.vue';
+import NewsletterSection from './homeSections/NewsletterSection.vue';
 
 @Component({
   components: {
