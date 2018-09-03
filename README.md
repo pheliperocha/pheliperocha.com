@@ -13,6 +13,7 @@
 <p align="center">
   <a href="https://travis-ci.com/pheliperocha/pheliperocha.com"><img src="https://travis-ci.com/pheliperocha/pheliperocha.com.svg?branch=master"></a>
   <a class="badge-align" href="https://www.codacy.com/app/pheliperocha/pheliperocha.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pheliperocha/pheliperocha.com&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/47ab4d1ecf094a62a6c5d0fb2ff3ff8b"/></a>
+  <a href="https://david-dm.org/pheliperocha/pheliperocha.com" title="dependencies status"><img src="https://david-dm.org/pheliperocha/pheliperocha.com/status.svg"/></a>
 </p>
 
 ## Built with 🛠
