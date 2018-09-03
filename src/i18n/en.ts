@@ -5,6 +5,7 @@ export const en = {
     projects: 'projects',
     blog: 'blog',
     contact: 'contact',
+    newsletter: 'newsletter',
   },
   sentences: {
     inspiration: 'The mind that opens up to a new idea never returns to its original size.',
