@@ -7,6 +7,7 @@
     <BlogSection theme="dark" />
     <ContactSection theme="light" />
     <NewsletterSection theme="dark" />
+    <Footer />
   </div>
 </template>
 
@@ -20,9 +21,11 @@ import ProjectsSection from './homeSections/ProjectsSection.vue';
 import BlogSection from './homeSections/BlogSection.vue';
 import ContactSection from './homeSections/ContactSection.vue';
 import NewsletterSection from './homeSections/NewsletterSection.vue';
+import Footer from '../components/Footer';
 
 @Component({
   components: {
+    Footer,
     NewsletterSection,
     ContactSection,
     BlogSection,
