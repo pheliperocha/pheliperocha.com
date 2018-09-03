@@ -10,5 +10,6 @@ export const pt = {
   sentences: {
     inspiration: 'A mente que se abre a uma nova ideia jamais volta ao seu tamanho original.',
     author: 'Albert Einstein',
+    repo_github: 'Repositório no Github',
   },
 };

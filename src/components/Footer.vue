@@ -9,6 +9,11 @@
             <div class="row">
                 &copy; {{ new Date().getFullYear() }} PhelipeRocha.com
             </div>
+            <div class="row icons">
+                <a href="https://github.com/pheliperocha/pheliperocha.com" :title="$t('sentences.repo_github')" target="_blank">
+                    <font-awesome-icon :icon="['fab', 'github']" />
+                </a>
+            </div>
         </div>
     </footer>
 </template>
@@ -30,6 +35,10 @@
         padding-top: 40px;
         padding-bottom: 40px;
 
+        .icons {
+            font-size: 26px;
+        }
+
         .goTop {
             text-align: center;
             width: 58px;
@@ -47,10 +56,6 @@
                 padding-top: 10px;
                 display: block;
                 height: 100%;
-
-                &:focus {
-                    color: $white;
-                }
             }
 
             &:hover {

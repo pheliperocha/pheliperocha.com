@@ -7,12 +7,13 @@ import * as messages from '@/i18n';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faMapMarkerAlt, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { faDotCircle } from '@fortawesome/free-regular-svg-icons';
+import { faGithub, faGithubAlt, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 /* tslint:disable:no-var-requires */
 const fontawesome = require('@fortawesome/vue-fontawesome');
 
 Vue.config.productionTip = false;
 
-library.add(faMapMarkerAlt, faDotCircle, faArrowUp);
+library.add(faMapMarkerAlt, faDotCircle, faArrowUp, faGithub, faGithubAlt, faGithubSquare);
 Vue.component('FontAwesomeIcon', fontawesome.FontAwesomeIcon);
 Vue.use(VueI18n);
 
