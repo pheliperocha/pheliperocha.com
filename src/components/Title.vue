@@ -96,4 +96,19 @@ export default class Title extends Vue {
             }
         }
     }
+
+    .blue-theme {
+        h1, h2, h3, h4 {
+            color: $white;
+        }
+
+        .divider {
+            background: $white;
+
+            span {
+                background: $blue;
+                color: $white;
+            }
+        }
+    }
 </style>

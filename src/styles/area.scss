@@ -17,4 +17,9 @@ section.area {
     background: $black;
     color: $white;
   }
+
+  &.blue-theme {
+    background: $blue;
+    color: $white;
+  }
 }

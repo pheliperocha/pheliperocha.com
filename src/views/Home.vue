@@ -6,7 +6,7 @@
     <ProjectsSection theme="light" />
     <BlogSection theme="dark" />
     <ContactSection theme="light" />
-    <NewsletterSection theme="dark" />
+    <NewsletterSection theme="blue" />
     <Footer />
   </div>
 </template>
