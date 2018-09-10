@@ -1,30 +1,30 @@
 <template>
-    <header class="menu-short visible">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-5 col-md-4 col-lg-3">
-                <div class="menu-profile">
-                    <a href="#">
-                        <div class="logo">
-                            <img src="https://s3-sa-east-1.amazonaws.com/pheliperocha/images/brand/PhelipeRocha-44.jpg" alt="Phelipe Rocha - Desenvolvedor Web Freelancer" title="Phelipe Rocha - Desenvolvedor Web Freelancer" />
-                        </div>
+    <header class="menu-short" :class="{visible}">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-5 col-md-4 col-lg-3">
+                    <div class="menu-profile">
+                        <a href="#">
+                            <div class="logo">
+                                <img src="https://s3-sa-east-1.amazonaws.com/pheliperocha/images/brand/PhelipeRocha-44.jpg" alt="Phelipe Rocha - Desenvolvedor Web Freelancer" title="Phelipe Rocha - Desenvolvedor Web Freelancer" />
+                            </div>
 
-                        <h3>Phelipe Rocha</h3>
-                    </a>
+                            <h3>Phelipe Rocha</h3>
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <nav class="menu-options col-xs-12 col-sm-7 col-md-6">
-                <ul>
-                    <li><a href="#aboutSection">{{ $t("menu.about") }}</a></li>
-                    <li><a href="#servicesSection">{{ $t("menu.services") }}</a></li>
-                    <li><a href="#projectsSection">{{ $t("menu.projects") }}</a></li>
-                    <li><a href="#blogSection">{{ $t("menu.blog") }}</a></li>
-                    <li><a href="#contactSection">{{ $t("menu.contact") }}</a></li>
-                </ul>
-            </nav>
+                <nav class="menu-options col-xs-12 col-sm-7 col-md-6">
+                    <ul>
+                        <li><a href="#aboutSection">{{ $t("menu.about") }}</a></li>
+                        <li><a href="#servicesSection">{{ $t("menu.services") }}</a></li>
+                        <li><a href="#projectsSection">{{ $t("menu.projects") }}</a></li>
+                        <li><a href="#blogSection">{{ $t("menu.blog") }}</a></li>
+                        <li><a href="#contactSection">{{ $t("menu.contact") }}</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
     </header>
 </template>
 
@@ -32,7 +32,21 @@
   import { Component, Vue } from 'vue-property-decorator';
 
   @Component
-  export default class HeaderFixed extends Vue {}
+  export default class HeaderFixed extends Vue {
+    private visible = false;
+
+    mounted() {
+      window.addEventListener('scroll', this.onScroll);
+    }
+
+    onScroll() {
+      this.visible = window.scrollY > 300;
+    }
+
+    destroy() {
+      window.removeEventListener('scroll', this.onScroll);
+    }
+  }
 </script>
 
 <style scoped lang="scss">
