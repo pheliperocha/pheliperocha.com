@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Header/>
+    <Header-Fixed/>
     <AboutSection theme="light" />
     <ServicesSection theme="dark" />
     <ProjectsSection theme="light" />
@@ -14,6 +15,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import Header from '@/components/Header.vue';
+import HeaderFixed from '@/components/HeaderFixed.vue';
 import Section from '@/components/Section.vue';
 import AboutSection from './homeSections/AboutSection.vue';
 import ServicesSection from './homeSections/ServicesSection.vue';
@@ -33,6 +35,7 @@ import Footer from '@/components/Footer.vue';
     ServicesSection,
     AboutSection,
     Header,
+    HeaderFixed,
     Section,
   },
 })
