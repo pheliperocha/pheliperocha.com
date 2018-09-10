@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-sm-5 col-md-4 col-lg-3">
                     <div class="menu-profile">
-                        <a href="#">
+                        <a href="#top" v-scroll-to="'#top'">
                             <div class="logo">
                                 <img src="https://s3-sa-east-1.amazonaws.com/pheliperocha/images/brand/PhelipeRocha-44.jpg" alt="Phelipe Rocha - Desenvolvedor Web Freelancer" title="Phelipe Rocha - Desenvolvedor Web Freelancer" />
                             </div>
@@ -16,11 +16,11 @@
 
                 <nav class="menu-options col-xs-12 col-sm-7 col-md-6">
                     <ul>
-                        <li><a href="#aboutSection">{{ $t("menu.about") }}</a></li>
-                        <li><a href="#servicesSection">{{ $t("menu.services") }}</a></li>
-                        <li><a href="#projectsSection">{{ $t("menu.projects") }}</a></li>
-                        <li><a href="#blogSection">{{ $t("menu.blog") }}</a></li>
-                        <li><a href="#contactSection">{{ $t("menu.contact") }}</a></li>
+                        <li><a href="#aboutSection" v-scroll-to="'#aboutSection'">{{ $t("menu.about") }}</a></li>
+                        <li><a href="#servicesSection" v-scroll-to="'#servicesSection'">{{ $t("menu.services") }}</a></li>
+                        <li><a href="#projectsSection" v-scroll-to="'#projectsSection'">{{ $t("menu.projects") }}</a></li>
+                        <li><a href="#blogSection" v-scroll-to="'#blogSection'">{{ $t("menu.blog") }}</a></li>
+                        <li><a href="#contactSection" v-scroll-to="'#contactSection'">{{ $t("menu.contact") }}</a></li>
                     </ul>
                 </nav>
             </div>
@@ -29,24 +29,24 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 
-  @Component
-  export default class HeaderFixed extends Vue {
-    private visible = false;
+@Component
+export default class HeaderFixed extends Vue {
+  private visible = false;
 
-    mounted() {
-      window.addEventListener('scroll', this.onScroll);
-    }
-
-    onScroll() {
-      this.visible = window.scrollY > 300;
-    }
-
-    destroy() {
-      window.removeEventListener('scroll', this.onScroll);
-    }
+  public mounted() {
+    window.addEventListener('scroll', this.onScroll);
   }
+
+  public onScroll() {
+    this.visible = window.scrollY > 300;
+  }
+
+  public destroy() {
+    window.removeEventListener('scroll', this.onScroll);
+  }
+}
 </script>
 
 <style scoped lang="scss">

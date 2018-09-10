@@ -1,5 +1,5 @@
 <template>
-  <header class="menu">
+  <header class="menu" id="top">
 
     <video autoplay muted loop poster="https://s3-sa-east-1.amazonaws.com/pheliperocha/images/bg-developer.jpg">
       <source src="https://s3-sa-east-1.amazonaws.com/pheliperocha/videos/bg.mp4" type="video/mp4" />
@@ -43,11 +43,11 @@
           <div class="row">
             <nav class="col-xs-12 menu-options">
               <ul>
-                <li><a href="#aboutSection">{{ $t("menu.about") }}</a></li>
-                <li><a href="#servicesSection">{{ $t("menu.services") }}</a></li>
-                <li><a href="#projectsSection">{{ $t("menu.projects") }}</a></li>
-                <li><a href="#blogSection">{{ $t("menu.blog") }}</a></li>
-                <li><a href="#contactSection">{{ $t("menu.contact") }}</a></li>
+                <li><a href="#aboutSection" v-scroll-to="'#aboutSection'">{{ $t("menu.about") }}</a></li>
+                <li><a href="#servicesSection" v-scroll-to="'#servicesSection'">{{ $t("menu.services") }}</a></li>
+                <li><a href="#projectsSection" v-scroll-to="'#projectsSection'">{{ $t("menu.projects") }}</a></li>
+                <li><a href="#blogSection" v-scroll-to="'#blogSection'">{{ $t("menu.blog") }}</a></li>
+                <li><a href="#contactSection" v-scroll-to="'#contactSection'">{{ $t("menu.contact") }}</a></li>
               </ul>
             </nav>
           </div>

@@ -10,12 +10,18 @@ import { faDotCircle } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faGithubAlt, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 /* tslint:disable:no-var-requires */
 const fontawesome = require('@fortawesome/vue-fontawesome');
+const VueScrollTo = require('vue-scrollto');
 
 Vue.config.productionTip = false;
 
 library.add(faMapMarkerAlt, faDotCircle, faArrowUp, faGithub, faGithubAlt, faGithubSquare);
 Vue.component('FontAwesomeIcon', fontawesome.FontAwesomeIcon);
 Vue.use(VueI18n);
+
+Vue.use(VueScrollTo, {
+  easing: 'ease-in-out',
+  offset: -20,
+});
 
 const i18n = new VueI18n({
   locale: 'en',
