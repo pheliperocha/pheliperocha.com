@@ -16,11 +16,11 @@
 
             <nav class="menu-options col-xs-12 col-sm-7 col-md-6">
                 <ul>
-                    <li><a href="#aboutSection" class="btn-sobre">Sobre</a></li>
-                    <li><a href="#servicesSection" class="btn-servicos">Serviços</a></li>
-                    <li><a href="#projectsSection" class="btn-portfolio">Portfólio</a></li>
-                    <li><a href="#blogSection" class="btn-blog">Blog</a></li>
-                    <li><a href="#contactSection" class="btn-contato">Contato</a></li>
+                    <li><a href="#aboutSection">{{ $t("menu.about") }}</a></li>
+                    <li><a href="#servicesSection">{{ $t("menu.services") }}</a></li>
+                    <li><a href="#projectsSection">{{ $t("menu.projects") }}</a></li>
+                    <li><a href="#blogSection">{{ $t("menu.blog") }}</a></li>
+                    <li><a href="#contactSection">{{ $t("menu.contact") }}</a></li>
                 </ul>
             </nav>
         </div>
@@ -108,6 +108,7 @@
                     width: 20%;
                     margin-bottom: 0;
                     padding: 5px;
+                    text-transform: capitalize;
                 }
             }
 
