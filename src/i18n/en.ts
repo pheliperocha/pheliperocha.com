@@ -7,6 +7,9 @@ export const en = {
     contact: 'contact',
     newsletter: 'newsletter',
   },
+  btn: {
+    go_to_top: 'Back to Top'
+  },
   sentences: {
     inspiration: 'The mind that opens up to a new idea never returns to its original size.',
     author: 'Albert Einstein',

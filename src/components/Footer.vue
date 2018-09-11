@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="goTop">
-            <a class="hint--top" data-hint="Ir para o topo" href="#">
+            <a href="#top" :title="$t('btn.go_to_top')">
                 <font-awesome-icon icon="arrow-up" />
             </a>
         </div>

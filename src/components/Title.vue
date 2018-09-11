@@ -99,15 +99,15 @@ export default class Title extends Vue {
 
     .blue-theme {
         h1, h2, h3, h4 {
-            color: $white;
+            color: $black;
         }
 
         .divider {
-            background: $white;
+            background: $black;
 
             span {
                 background: $blue;
-                color: $white;
+                color: $black;
             }
         }
     }

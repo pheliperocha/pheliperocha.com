@@ -4,7 +4,7 @@ section.area {
   padding: 60px 20px 20px 20px;
   height: auto;
   background: $white;
-  color: #4e4e4e;
+  color: $black;
 
   p {
     font-size: 22px;
@@ -20,6 +20,6 @@ section.area {
 
   &.blue-theme {
     background: $blue;
-    color: $white;
+    color: $black;
   }
 }
