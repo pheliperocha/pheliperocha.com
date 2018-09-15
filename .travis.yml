@@ -4,6 +4,11 @@ node_js:
 sudo: true
 dist: trusty
 
+branches:
+  only:
+  - master
+  - feature/travis-ci
+
 cache:
   directories:
     - node_modules
