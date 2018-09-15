@@ -23,19 +23,9 @@ addons:
 before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
-  - npm install netlify-cli -g
 
 install:
   - npm install
-
-stages:
-  - test
-  - build
-  - deploy
-  - audit
-
-env:
-  - CI=true
 
 jobs:
   include:
@@ -47,14 +37,6 @@ jobs:
     - stage: build
       script: npm run build
 
-    - stage: deploy
-      if: branch = feature/travis-ci
-      provider: script
-        script: netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_ACCESS_TOKEN
-        skip_cleanup: true
-        on:
-          branch: master
-
     - stage: audit
-      if: branch = feature/travis-ci
-      script: npm run lh -- https://pheliperocha.netlify.com
+      if: type = api
+      script:
