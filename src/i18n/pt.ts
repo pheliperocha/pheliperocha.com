@@ -8,7 +8,7 @@ export const pt = {
     newsletter: 'newsletter',
   },
   btn: {
-    go_to_top: 'Ir para o topo'
+    go_to_top: 'Ir para o topo',
   },
   sentences: {
     inspiration: 'A mente que se abre a uma nova ideia jamais volta ao seu tamanho original.',
