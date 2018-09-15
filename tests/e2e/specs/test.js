@@ -21,6 +21,6 @@ module.exports = {
       .assert.containsText('#blogSection h1', 'BLOG')
       .assert.containsText('#contactSection h1', 'CONTACT')
       .assert.containsText('#newsletterSection h1', 'NEWSLETTER')
-      .end()
+      .end();
   },
 };

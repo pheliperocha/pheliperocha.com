@@ -41,6 +41,7 @@ Vue.use(VueScrollTo, {
   easing: 'ease-in-out',
   offset: -20,
 });
+Vue.directive('scroll-to', VueScrollTo);
 
 const i18n = new VueI18n({
   locale: 'en',
