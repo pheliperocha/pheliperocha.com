@@ -31,8 +31,8 @@ jobs:
   include:
     - stage: test
       script: npm run lint
-      script: npm run test:unit
-      script: npm run test:e2e
+    - script: npm run test:unit
+    - script: npm run test:e2e
 
     - stage: build
       script: npm run build
