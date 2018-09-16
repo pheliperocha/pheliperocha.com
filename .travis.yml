@@ -38,10 +38,12 @@ jobs:
         - npm run build
 
     - stage: deploy
+      if: branch = master
       script:
         - chmod +x ./scripts/publish.sh
         - ./scripts/publish.sh
 
     - stage: audit
-      if: type = api
       script:
+        - chmod +x ./scripts/audit.sh
+        - ./scripts/audit.sh
