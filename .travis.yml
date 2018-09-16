@@ -39,8 +39,8 @@ jobs:
 
     - stage: deploy
       script:
-        - npm run build
-        - netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_ACCESS_TOKEN --dir dist
+        - chmod +x ./scripts/publish.sh
+        - ./scripts/publish.sh
 
     - stage: audit
       if: type = api
