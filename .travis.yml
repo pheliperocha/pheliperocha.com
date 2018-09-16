@@ -7,11 +7,10 @@ dist: trusty
 branches:
   only:
   - master
-  - feature/travis-ci
-
-cache:
-  directories:
-    - node_modules
+  - develop
+  - /^feature/.*$/
+  - /^hotfix/.*$/
+  - /^release/.*$/
 
 addons:
   apt:
@@ -20,13 +19,17 @@ addons:
     packages:
       - google-chrome-stable
 
-before_script:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-  - npm install netlify-cli -g
+cache:
+  directories:
+    - node_modules
 
 install:
   - npm install
+  - npm install netlify-cli -g
+
+before_script:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
 
 jobs:
   include:
