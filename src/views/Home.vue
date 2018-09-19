@@ -25,7 +25,7 @@ import BlogSection from './homeSections/BlogSection.vue';
 import ContactSection from './homeSections/ContactSection.vue';
 import NewsletterSection from './homeSections/NewsletterSection.vue';
 import Footer from '@/components/Footer.vue';
-import FloatButtons from '../components/FloatButtons';
+import FloatButtons from '@/components/FloatButtons.vue';
 
 @Component({
   components: {
