@@ -19,9 +19,6 @@ cache:
 install:
   - npm install
 
-after_failure:
-  - cat /home/travis/.npm/_logs/*-debug.log
-
 jobs:
   include:
     - stage: test
@@ -50,6 +47,7 @@ jobs:
         - ./scripts/publish.sh
 
     - stage: audit
+      if: type = pull_request
       script:
         - chmod +x ./scripts/audit.sh
         - ./scripts/audit.sh
