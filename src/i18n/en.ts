@@ -7,6 +7,9 @@ export const en = {
     contact: 'contact',
     newsletter: 'newsletter',
   },
+  title: {
+    skills: 'Skills',
+  },
   btn: {
     go_to_top: 'Back to Top',
   },

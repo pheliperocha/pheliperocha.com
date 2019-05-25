@@ -13,6 +13,19 @@ section.area {
     margin: 0 0 24px;
   }
 
+  a {
+    color: $accent;
+    text-decoration: none;
+    box-shadow: inset 0 -2px 0 $accent;
+    transition: box-shadow .05s linear;
+    word-break: break-all;
+
+    &:hover {
+      color: $black;
+      box-shadow: inset 0 -8px 0 $accent;
+    }
+  }
+
   &.dark-theme {
     background: $black;
     color: $white;

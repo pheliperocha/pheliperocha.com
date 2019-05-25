@@ -11,7 +11,13 @@
     "test:coverage": "nyc npm run test:unit",
     "codacy": "nyc report --reporter=text-lcov | codacy-coverage --accountToken <accountToken> --username pheliperocha --projectName pheliperocha.com",
     "ci": "npm run lint && npm run test:unit && npm run test:e2e && npm run build",
-    "lh": "lighthouse-ci"
+    "lh": "lighthousebot"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run ci"
+    }
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.4",
@@ -40,7 +46,8 @@
     "@vue/cli-service": "^3.0.1",
     "@vue/test-utils": "^1.0.0-beta.20",
     "chai": "^4.1.2",
-    "lighthouse-ci": "git+https://github.com/ebidel/lighthouse-ci.git",
+    "husky": "^2.3.0",
+    "lighthousebot": "git+https://github.com/GoogleChromeLabs/lighthousebot.git",
     "node-sass": "^4.9.0",
     "nyc": "13.0.1",
     "sass-loader": "^7.0.1",
