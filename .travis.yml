@@ -19,6 +19,9 @@ cache:
 install:
   - npm install
 
+after_failure:
+  - cat /home/travis/.npm/_logs/*-debug.log
+
 jobs:
   include:
     - stage: test
