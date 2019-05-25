@@ -7,6 +7,9 @@ export const pt = {
     contact: 'contato',
     newsletter: 'newsletter',
   },
+  title: {
+    skills: 'Competências',
+  },
   btn: {
     go_to_top: 'Ir para o topo',
   },
