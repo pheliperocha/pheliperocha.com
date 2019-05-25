@@ -5,6 +5,16 @@
         </a>
         <ul v-bind:class="{ toggled }">
             <li>
+                <a href="https://br.linkedin.com/in/pheliperocha" target="_blank" class="btn">
+                    <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/pheliperocha" target="_blank" class="btn">
+                    <font-awesome-icon :icon="['fab', 'github']" />
+                </a>
+            </li>
+            <li>
                 <a href="https://www.facebook.com/PhelipeRocha" target="_blank" class="btn">
                     <font-awesome-icon :icon="['fab', 'facebook-f']" />
                 </a>
@@ -12,16 +22,6 @@
             <li>
                 <a href="https://twitter.com/pheliperocha" target="_blank" class="btn">
                     <font-awesome-icon :icon="['fab', 'twitter']" />
-                </a>
-            </li>
-            <li>
-                <a href="https://br.linkedin.com/in/pheliperocha" target="_blank" class="btn">
-                    <font-awesome-icon :icon="['fab', 'linkedin-in']" />
-                </a>
-            </li>
-            <li >
-                <a href="https://github.com/pheliperocha" target="_blank" class="btn">
-                    <font-awesome-icon :icon="['fab', 'github']" />
                 </a>
             </li>
             <li>
