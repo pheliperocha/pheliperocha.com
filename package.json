@@ -48,7 +48,7 @@
     "chai": "^4.1.2",
     "husky": "^2.3.0",
     "lighthousebot": "git+https://github.com/GoogleChromeLabs/lighthousebot.git",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.13.0",
     "nyc": "13.0.1",
     "sass-loader": "^7.0.1",
     "typescript": "^3.0.0",
