@@ -1,25 +1,31 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import Header from './layout/Header.vue';
+import Footer from './layout/Footer.vue';
 import Home from './views/Home.vue';
 
 Vue.use(Router);
 
 export default new Router({
+  linkExactActiveClass: 'active',
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
       path: '/',
       name: 'home',
-      component: Home,
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+      components: {
+        header: Header,
+        default: Home,
+        footer: Footer,
+      },
     },
   ],
+  scrollBehavior: (to) => {
+    if (to.hash) {
+      return { selector: to.hash };
+    } else {
+      return { x: 0, y: 0 };
+    }
+  },
 });

@@ -3,9 +3,9 @@
 
 import { expect } from 'chai';
 import { shallowMount } from '@vue/test-utils';
-import Header from '@/layout/Header.vue';
+import Header from '@/layout/Footer.vue';
 
-describe('Header.vue', () => {
+describe('Footer.vue', () => {
   before(() => {});
 
   it('Should have text', () => {
@@ -14,6 +14,6 @@ describe('Header.vue', () => {
         $t: () => {},
       },
     });
-    expect(wrapper.text()).to.include('Header');
+    expect(wrapper.text()).to.include('Footer');
   });
 });
