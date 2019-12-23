@@ -3,6 +3,7 @@ import App from './App.vue';
 import router from './router';
 import './registerServiceWorker';
 
+import Argon from './plugins/argon-kit';
 import VueI18n from 'vue-i18n';
 import * as messages from '@/i18n';
 /* tslint:disable:no-var-requires */
@@ -10,17 +11,18 @@ const VueScrollTo = require('vue-scrollto');
 
 Vue.config.productionTip = false;
 
+Vue.use(Argon);
 Vue.use(VueI18n);
-
 Vue.use(VueScrollTo, {
   easing: 'ease-in-out',
-  offset: -20,
+  offset: -20
 });
+
 Vue.directive('scroll-to', VueScrollTo);
 
 const i18n = new VueI18n({
   locale: 'en',
-  messages,
+  messages
 });
 
 
@@ -29,5 +31,5 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   i18n,
-  render: (h) => h(App),
+  render: (h) => h(App)
 }).$mount('#app');

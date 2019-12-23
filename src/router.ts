@@ -17,9 +17,9 @@ export default new Router({
       components: {
         header: Header,
         default: Home,
-        footer: Footer,
-      },
-    },
+        footer: Footer
+      }
+    }
   ],
   scrollBehavior: (to) => {
     if (to.hash) {
@@ -27,5 +27,5 @@ export default new Router({
     } else {
       return { x: 0, y: 0 };
     }
-  },
+  }
 });

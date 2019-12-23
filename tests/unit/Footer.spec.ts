@@ -11,8 +11,8 @@ describe('Footer.vue', () => {
   it('Should have text', () => {
     const wrapper = shallowMount(Header, {
       mocks: {
-        $t: () => {},
-      },
+        $t: () => {}
+      }
     });
     expect(wrapper.text()).to.include('Footer');
   });

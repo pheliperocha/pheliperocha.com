@@ -5,17 +5,17 @@ export const en = {
     projects: 'projects',
     blog: 'blog',
     contact: 'contact',
-    newsletter: 'newsletter',
+    newsletter: 'newsletter'
   },
   title: {
-    skills: 'Skills',
+    skills: 'Skills'
   },
   btn: {
-    go_to_top: 'Back to Top',
+    go_to_top: 'Back to Top'
   },
   sentences: {
     inspiration: 'The mind that opens up to a new idea never returns to its original size.',
     author: 'Albert Einstein',
-    repo_github: 'Repository on Github',
-  },
+    repo_github: 'Repository on Github'
+  }
 };
