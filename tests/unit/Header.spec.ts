@@ -14,6 +14,6 @@ describe('Header.vue', () => {
         $t: () => {}
       }
     });
-    expect(wrapper.text()).to.include('Header');
+    expect(wrapper.text()).to.include('LinkedInInstagramMediumGithub');
   });
 });
