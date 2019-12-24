@@ -28,6 +28,8 @@ export const en = {
     jobTitle: 'Back End Developer',
     jobCompanie: 'Mutual Fintech',
     degree: 'Computer Science Degree',
+    thanks: 'Thanks',
+    get_in_touch: `Let's get in touch on any of these platforms.`,
 
     shortDescription: `I'm a self-motivated,
     productive developer with more than four years of web development experience,

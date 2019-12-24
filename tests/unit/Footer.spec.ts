@@ -14,6 +14,6 @@ describe('Footer.vue', () => {
         $t: () => {}
       }
     });
-    expect(wrapper.text()).to.include('Footer');
+    expect(wrapper.text()).to.include('Phelipe Rocha');
   });
 });
